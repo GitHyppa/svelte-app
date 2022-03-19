@@ -1,16 +1,13 @@
-<script lang="ts"></script>
+<script>
+	import Hero from '../components/Hero.svelte';
+</script>
 
-<section>
-	<h1>CONTENT</h1>
-</section>
+<main>
+	<Hero />
+</main>
 
 <style>
-	section {
-		display: flex;
-		min-height: 80vh;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
+	main {
+		padding: 0 10%;
 	}
 </style>

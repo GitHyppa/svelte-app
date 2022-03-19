@@ -1,7 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+::root {
+	--primary: #3f3fff;
+	--secondary: #3030be;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Poppins', sans-serif;
 	background: #101010;
 	color: white;
+	background-image: url('./background-mobile.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	display: none;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+	body {
+		background-image: url('./background.png');
+	}
 }

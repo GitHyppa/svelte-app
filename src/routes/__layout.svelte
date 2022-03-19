@@ -1,25 +1,14 @@
 <script lang="ts">
+	import Header from '../components/Header.svelte';
+
 	import '../app.css';
+	import Footer from '../components/Footer.svelte';
 </script>
 
-<header>
-	<h1>HEADER</h1>
-</header>
+<Header />
 
 <main>
 	<slot />
 </main>
 
-<footer>
-	<h1>FOOTER</h1>
-</footer>
-
-<style>
-	header {
-		text-align: center;
-	}
-
-	footer {
-		text-align: center;
-	}
-</style>
+<Footer />
